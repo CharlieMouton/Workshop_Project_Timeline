@@ -101,33 +101,53 @@ function drawTimeline() {
   strokeWeight(0);
   timeline = rect(30, height/2-2, width, 5);
   timeline.color(0);
+  fill(0);
+  labelStartPosition = 20;
+  labelOffset = 90;
   timelineDiv1 = createDiv("Q3 '15")
-    .position(10,height/2+20)
+    .position(labelStartPosition,height/2+20)
     .class("timeline-label");
+  rect(labelStartPosition+12,height/2+3,3,10)
+  labelStartPosition += labelOffset;
   timelineDiv2 = createDiv("Q4 '15")
-    .position(100,height/2+20)
+    .position(labelStartPosition,height/2+20)
     .class("timeline-label");
+  rect(labelStartPosition+12,height/2+3,3,10)
+  labelStartPosition += labelOffset;
   timelineDiv3 = createDiv("Q1 '16")
-    .position(190,height/2+20)
+    .position(labelStartPosition,height/2+20)
     .class("timeline-label");
+  rect(labelStartPosition+12,height/2+3,3,10)
+  labelStartPosition += labelOffset;
   timelineDiv4 = createDiv("Q2 '16")
-    .position(280,height/2+20)
+    .position(labelStartPosition,height/2+20)
     .class("timeline-label");
+  rect(labelStartPosition+12,height/2+3,3,10)
+  labelStartPosition += labelOffset;
   timelineDiv5 = createDiv("Q3 '16")
-    .position(370,height/2+20)
+    .position(labelStartPosition,height/2+20)
     .class("timeline-label");
+  rect(labelStartPosition+12,height/2+3,3,10)
+  labelStartPosition += labelOffset;
   timelineDiv6 = createDiv("Q4 '16")
-    .position(460,height/2+20)
+    .position(labelStartPosition,height/2+20)
     .class("timeline-label");
+  rect(labelStartPosition+12,height/2+3,3,10)
+  labelStartPosition += labelOffset;
   timelineDiv7 = createDiv("Q1 '17")
-    .position(550,height/2+20)
+    .position(labelStartPosition,height/2+20)
     .class("timeline-label");
+  rect(labelStartPosition+12,height/2+3,3,10)
+  labelStartPosition += labelOffset;
   timelineDiv8 = createDiv("Q2 '17")
-    .position(640,height/2+20)
+    .position(labelStartPosition,height/2+20)
     .class("timeline-label");
+  rect(labelStartPosition+12,height/2+3,3,10)
+  labelStartPosition += labelOffset;
   timelineDiv9 = createDiv("Q3 '17")
-    .position(730,height/2+20)
+    .position(labelStartPosition,height/2+20)
     .class("timeline-label");
+  rect(labelStartPosition+12,height/2+3,3,10)
 }
 
 function drawBeads() {
